@@ -1,1 +1,1 @@
-Set up in script your path to ndk
+Set up in graddle scripts your path to ndk
