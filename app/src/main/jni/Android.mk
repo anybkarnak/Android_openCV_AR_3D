@@ -10,7 +10,7 @@ OPENCV_LIB_TYPE:=SHARED
 include ${OPENCVROOT}/sdk/native/jni/OpenCV.mk
 
 LOCAL_SRC_FILES := com_example_ndk_opencv_androidstudio_NativeClass.cpp
-LOCAL_LDLIBS += -llog
-LOCAL_MODULE := fromJNI
+LOCAL_LDLIBS += -llog -ldl
+LOCAL_MODULE    := native_sample
 
 include $(BUILD_SHARED_LIBRARY)

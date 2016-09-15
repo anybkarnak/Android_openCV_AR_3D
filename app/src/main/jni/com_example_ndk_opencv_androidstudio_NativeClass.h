@@ -7,14 +7,12 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-/*
- * Class:     com_example_ndk_opencv_androidstudio_NativeClass
- * Method:    getStringFromNative
- * Signature: ()Ljava/lang/String;
- */
-JNIEXPORT jstring JNICALL Java_com_example_ndk_1opencv_1androidstudio_NativeClass_getStringFromNative
-  (JNIEnv *, jobject);
 
+JNIEXPORT void JNICALL Java_zh_wang_android_opencv_ar_OpenCVARView_FindFeatures(JNIEnv* env, jobject thiz, jint width, jint height, jbyteArray yuv, jintArray bgra);
+
+JNIEXPORT void JNICALL Java_zh_wang_android_opencv_ar_BitmapProcessing_GetCameraIntrisicParams(JNIEnv* env, jobject thiz);
+
+JNIEXPORT void JNICALL Java_zh_wang_android_opencv_ar_Homography_doHomography(JNIEnv* env, jobject thiz, jstring filename);
 #ifdef __cplusplus
 }
 #endif
